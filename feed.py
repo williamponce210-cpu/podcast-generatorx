@@ -1,7 +1,11 @@
 import yaml
 import xml.etree.ElementTree as xml_tree
+from pathlib import Path
 
-with open('./feed.yaml', 'r', encoding='utf-8') as file:
+BASE_DIR = Path(__file__).parent
+YAML_PATH = BASE_DIR / "feed.yaml"
+
+with open(YAML_PATH, 'r', encoding='utf-8') as file:
     yaml_data = yaml.safe_load(file)
 
 LINK_PREFIX = "https://williamponce210-cpu.github.io/podcast-tes"

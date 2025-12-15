@@ -20,3 +20,5 @@ inputs:
     description: "The committer's name"
     required: true
     default: "${{ github.actor }}"
+
+    uses: williamponce210-cpu/podcast-generator@v1

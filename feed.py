@@ -1,7 +1,7 @@
 import yaml
 import xml.etree.ElementTree as xml_tree
 
-with open('feed.yaml', 'r', encoding='utf-8') as file:
+with open('./feed.yaml', 'r', encoding='utf-8') as file:
     yaml_data = yaml.safe_load(file)
 
 LINK_PREFIX = "https://williamponce210-cpu.github.io/podcast-tes"

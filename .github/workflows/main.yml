@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out Repo
+      - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Generate Podcast
-        uses: williamponce210-cpu/podcast-generator@main
+      - name: Generate Podcast Feed
+        uses: williamponce210-cpu/podcast-generator@v1
